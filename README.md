@@ -33,4 +33,8 @@ const app = Vue.createApp({
         }
     }
 })
+
+// in browser console
+mountApp.product
+// Output: Espresso
 ```
