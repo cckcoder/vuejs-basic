@@ -4,5 +4,4 @@ const app = Vue.createApp({
             product: 'Espresso'
         }
     }
-
 })
