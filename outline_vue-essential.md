@@ -22,6 +22,7 @@
     * `vue create my-project` * Vue basic
 * Vue router
 * Vue component
+* VueX (store) How it work.
 
 ## Coding Time.
 * Install VueJS with CDN.
