@@ -1,6 +1,7 @@
 # Outline Vuejs Essential
 
 ## Presentation
+* [Slide](https://robinck.github.io/vue-presentation/#/1)
 * VueJs
     * VueJs คืออะไร?
     * VueJs ทำงานอย่างไร
