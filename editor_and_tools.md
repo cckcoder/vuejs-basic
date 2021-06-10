@@ -3,7 +3,7 @@
 * [VSCode](https://code.visualstudio.com/download)
 * [Python: latest version](https://www.python.org/downloads/)
 * [Node js](https://nodejs.org/en/download/)
-* [Vue devtools](https://nodejs.org/en/download/)
+* [Vue devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en)
 
 ## VSCode Extension
 
