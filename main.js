@@ -8,7 +8,7 @@ const app = Vue.createApp({
             imgSize: {
                 width: '350px',
                 height: '400px'
-            }
+            },
         }
     }
 })

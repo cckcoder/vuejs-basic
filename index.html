@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue Espresso</title>
     <script src="https://unpkg.com/vue@next"></script>
+    <style>
+        .out-of-stock {
+            opacity: 0.5;
+        } 
+    </style>
 </head>
+
 <body>
     <div id="app">
         <h1>{{ coffee }}</h1>
@@ -15,11 +21,13 @@
                 Hover your mouse!!
             </span>
         </div>
-        <div>
             <img 
                 v-bind:src="img" 
                 v-bind:style="imgSize"
+                v-bind:class="{ 'out-of-stock': ! onStock }"
             >
+            <h3 v-if="onStock">Available Order</h3>
+            <h3 v-else>Comming soon</h3>
         </div>
     </div>
 
