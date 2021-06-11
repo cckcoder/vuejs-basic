@@ -37,6 +37,23 @@
                 </li>
             </ul>
         </div>
+        <div>
+            <span>{{ qty }}</span>
+            <button 
+                v-on:click="handleOrder"
+                type="button" 
+                style="margin-left: 15px;"
+            >
+                Order
+            </button>
+            <button 
+                v-on:click="handleCancleOrder"
+                style="margin-left: 15px;"
+                type="button"
+            >
+                Cancle
+            </button>
+        </div>
     </div>
 
     <!-- Import App -->
