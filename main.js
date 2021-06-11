@@ -9,6 +9,11 @@ const app = Vue.createApp({
                 width: '350px',
                 height: '400px'
             },
+            coffeeList: [
+                'Espresso',
+                'Espresso Macchiato',
+                'Esspresso Con Panna'
+            ]
         }
     }
 })

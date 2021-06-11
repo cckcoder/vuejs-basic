@@ -21,13 +21,21 @@
                 Hover your mouse!!
             </span>
         </div>
+        <div>
             <img 
                 v-bind:src="img" 
                 v-bind:style="imgSize"
                 v-bind:class="{ 'out-of-stock': ! onStock }"
             >
             <h3 v-if="onStock">Available Order</h3>
-            <h3 v-else>Comming soon</h3>
+            <h3 v-else>Comming Soon</h3>
+        </div>
+        <div>
+            <ul>
+                <li v-for="item in coffeeList">
+                    {{ item }}
+                </li>
+            </ul>
         </div>
     </div>
 
