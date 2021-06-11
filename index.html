@@ -10,9 +10,17 @@
 <body>
     <div id="app">
         <h1>{{ coffee }}</h1>
-        <span v-bind:title="message">
-            Hover your mouse!!
-        </span>
+        <div>
+            <span v-bind:title="message">
+                Hover your mouse!!
+            </span>
+        </div>
+        <div>
+            <img 
+                v-bind:src="img" 
+                v-bind:style="imgSize"
+            >
+        </div>
     </div>
 
     <!-- Import App -->
