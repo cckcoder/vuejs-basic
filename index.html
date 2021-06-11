@@ -15,7 +15,7 @@
 
 <body>
     <div id="app">
-        <h1>{{ coffee }}</h1>
+        <h1>{{ title }}</h1>
         <div>
             <span v-bind:title="message">
                 Hover your mouse!!
@@ -23,7 +23,7 @@
         </div>
         <div>
             <img 
-                v-bind:src="img" 
+                v-bind:src="image" 
                 v-bind:style="imgSize"
                 v-bind:class="{ 'out-of-stock': ! onStock }"
             >
@@ -32,13 +32,21 @@
         </div>
         <div>
             <ul>
-                <li v-for="item in coffeeList">
-                    {{ item }}
+                <li 
+                    style="cursor: pointer;"
+                    v-for="(item, index) in coffeeList"
+                    @click="updateVariant(index)"
+
+                >
+                    {{ item.product }}
                 </li>
             </ul>
         </div>
         <div>
-            <span>{{ qty }}</span>
+            <span style="border-bottom: brown solid 3px;">
+                {{ order }}
+            </span>
+
             <button 
                 v-on:click="handleOrder"
                 type="button" 
