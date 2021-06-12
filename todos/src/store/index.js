@@ -28,7 +28,6 @@ export default createStore({
       commit('UPDATE_MARK', id)
     },
     deleteTodo ({ commit }, id) {
-      console.log(id)
       commit('DELETE_TODO', id)
     }
   },
